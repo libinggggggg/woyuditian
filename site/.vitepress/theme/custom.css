@@ -1,0 +1,101 @@
+/* 书卷式中文阅读风格，参考用户指定项目的视觉逻辑并针对本书调整 */
+
+:root {
+  --vp-font-family-base: 'Noto Serif SC', 'Source Han Serif SC', 'STSong', 'SimSun', serif;
+  --vp-font-family-mono: 'SF Mono', 'Fira Code', Menlo, monospace;
+  --vp-c-brand-1: #c9a96e;
+  --vp-c-brand-2: #b8953f;
+  --vp-c-brand-3: #a88430;
+  --vp-c-brand-soft: rgba(201, 169, 110, 0.14);
+}
+
+.dark {
+  --vp-c-brand-1: #d4b87a;
+  --vp-c-brand-2: #c9a96e;
+  --vp-c-brand-3: #b8953f;
+  --vp-c-brand-soft: rgba(201, 169, 110, 0.16);
+}
+
+.VPDoc .container .content {
+  max-width: 780px;
+}
+
+.vp-doc {
+  line-height: 1.9;
+  font-size: 17px;
+  letter-spacing: 0.01em;
+}
+
+.vp-doc p {
+  text-indent: 2em;
+  margin: 0.85em 0;
+}
+
+.vp-doc h1 + p,
+.vp-doc h2 + p,
+.vp-doc h3 + p {
+  text-indent: 0;
+}
+
+.vp-doc h1 {
+  font-size: 2em;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  border-bottom: 2px solid var(--vp-c-brand-1);
+  padding-bottom: 0.35em;
+  margin-bottom: 1em;
+}
+
+.vp-doc h2 {
+  font-size: 1.45em;
+  font-weight: 600;
+  margin-top: 2em;
+  border-bottom: 1px solid var(--vp-c-divider);
+  padding-bottom: 0.25em;
+}
+
+.vp-doc blockquote {
+  border-left: 4px solid var(--vp-c-brand-1);
+  background: var(--vp-c-brand-soft);
+  padding: 1em 1.5em;
+  margin: 1.5em 0;
+  border-radius: 0 6px 6px 0;
+}
+
+.vp-doc blockquote p {
+  text-indent: 0;
+}
+
+.VPHero .name,
+.VPHero .text,
+.VPHero .tagline {
+  font-family: 'Noto Serif SC', serif !important;
+}
+
+.VPHero .name {
+  letter-spacing: 0.12em;
+}
+
+.VPHero .tagline {
+  font-size: 1.2em !important;
+}
+
+.VPSidebar .group .title {
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+@media (max-width: 768px) {
+  .vp-doc {
+    font-size: 16px;
+    line-height: 1.85;
+  }
+
+  .vp-doc h1 {
+    font-size: 1.65em;
+  }
+
+  .vp-doc h2 {
+    font-size: 1.3em;
+  }
+}
